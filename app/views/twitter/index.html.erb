@@ -1,0 +1,10 @@
+<%= image_tag @handle_tweets.first.profile_image_url %>
+
+<table>
+  <% @handle_tweets.each do |r| %>
+    <tr>
+      <td><li><%= r['text'] %></li></td>
+    </tr>
+  <% end %>
+</table>
+
