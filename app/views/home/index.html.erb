@@ -1,0 +1,23 @@
+<div id="twitter_circle">
+  <%= image_tag @handle_tweets.first.profile_image_url %>
+  <div id="twitter_text">
+    <table>
+      <% @handle_tweets.each do |r| %>
+        <tr>
+          <td><li><%= r['text'] %></li><br/ ></td>
+        </tr>
+      <% end %>
+    </table>
+
+  </div>
+</div>
+<div id="blog">
+  <% @post.each do |p| %>
+    <%= p.title %>
+    <%= p.date %>
+    <%= p.content %>
+    <br />
+  <% end %>
+</div>
+<div id="contact">
+</div>

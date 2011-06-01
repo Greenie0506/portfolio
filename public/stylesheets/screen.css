@@ -1,0 +1,32 @@
+*{
+  margin:0
+  padding:0
+}
+
+body{
+  font-size:13px;
+  font-family:'Helvetica', 'Arial', sans-serif;
+}
+
+#wrapper{
+  width:960px;
+  margin:0 auto;
+}
+
+#twitter_circle {
+  width:27em;
+  height:27em;
+  -web-border-radius:13.5em;
+  -moz-border-radius:13.5em;
+  border-radius:13.5em;
+  background:pink;
+  margin:0 auto;
+}
+
+#twitter_text{
+  width:300px;
+  height:300px;
+  margin:auto auto;
+  text-align:center;
+  list-style:none;
+}
