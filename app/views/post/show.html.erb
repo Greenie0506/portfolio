@@ -1,3 +1,6 @@
-<%= @post.title %>
-<%= @post.date %>
-<%= @post.content %> 
+<div><%= @post.title %></div>
+<div><%= @post.date %></div>
+<div><%= @post.content %></div>
+
+<div><%= link_to 'Destroy', @post, :method => :delete %></div>
+<div><%= link_to 'Home', root_path %></div>

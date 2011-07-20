@@ -1,20 +1,27 @@
-<%= image_tag @handle_tweets.first.profile_image_url %>
-<div id="twitter_text">
-  <table>
-    <% @handle_tweets.each do |r| %>
-      <tr>
-        <td><li><%= r['text'] %></li></td>
-      </tr>
-    <% end %>
-  </table>
-</div>
+<div class="date_time">
+  <%= @time %>
+</div><!-- date_time" -->
 
-<div id="blog">
+<div class="twitter_image">
+  <%= image_tag @handle_tweets.first.profile_image_url %>
+</div><!-- twitter_image -->
+
+<div class="twitter_text">
+  <% @handle_tweets.each do |r| %>
+    <div><%= r['text'] %></div>
+  <% end %>
+</div><!-- twitter_text -->
+
+<div class="blog">
   <% @post.each do |p| %>
-    <%= p.title %>
-    <%= p.date %>
-    <%= p.content %>
+    <div>Title: <%= p.title %></div>
+    <div>Date: <%= p.date %></div>
+    <div><%= p.content %></div>
     <br />
   <% end %>
-</div>
+</div><!-- blog -->
 
+<div class="social_media">
+  <div><%= link_to "Twitter", "http://twitter.com/nickpgreenfield" %></div>
+  <div><%= link_to "Google+", "https://plus.google.com/103556857709392264587/posts?hl=en" %></div>
+</div>
