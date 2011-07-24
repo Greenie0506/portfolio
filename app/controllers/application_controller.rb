@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
     @post = Post.all
 
     #date
-    @time = Time.now.strftime("%A, %B %d, %Y at %l%p")
+    @time = Time.now.strftime("%A, %B %d, %Y")
 
     #mailer
     @support = Support.new(:id => 1)
