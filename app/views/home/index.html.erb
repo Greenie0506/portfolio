@@ -10,7 +10,9 @@
 
 <div class="twitter_text">
   <% @handle_tweets.each do |r| %>
-    <div><%= r['text'] %></div>
+    <ul>
+      <li><%= r['text'] %></li>
+    </ul>
   <% end %>
 </div><!-- twitter_text -->
 
