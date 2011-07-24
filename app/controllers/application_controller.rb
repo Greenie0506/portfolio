@@ -12,9 +12,12 @@ class ApplicationController < ActionController::Base
 
     #date
     @time = Time.now.strftime("%A, %B %d, %Y at %l%p")
+
+    #mailer
+    @support = Support.new(:id => 1)
   end
 
- def show
+  def show
     @post = Post.find(params[:id])
   end
 
@@ -24,17 +27,14 @@ class ApplicationController < ActionController::Base
 
   def create
     @post = Post.new(params[:post])
-
     if @post.save
       redirect_to(@post)
     end
   end
 
   def destroy
-  @post = Post.find(params[:id])
-  @post.destroy
-
-  redirect_to root_path
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path
   end
-
 end

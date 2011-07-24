@@ -4,6 +4,6 @@ class Notifier < ActionMailer::Base
     @sender = sender
     mail(:to => "greenie0506@gmail.com",
          :from => sender.email,
-         :subject => "New #{sender}")
+         :subject => sender.sender_name)
  end
 end
