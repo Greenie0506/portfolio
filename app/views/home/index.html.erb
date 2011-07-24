@@ -1,8 +1,10 @@
 <div class="date_time">
+  <h2>Todays Date:</h2>
   <%= @time %>
 </div><!-- date_time" -->
 
 <div class="twitter_image">
+  <h2>Twitter Feed</h2>
   <%= image_tag @handle_tweets.first.profile_image_url %>
 </div><!-- twitter_image -->
 
@@ -12,9 +14,8 @@
   <% end %>
 </div><!-- twitter_text -->
 
-<br />
-
 <div class="blog">
+  <h2>Blog</h2>
   <% @post.each do |p| %>
     <div>Title: <%= p.title %></div>
     <div>Date: <%= p.date %></div>
@@ -24,6 +25,7 @@
 </div><!-- blog -->
 
 <div class="social_media">
+  <h2>I'm Social</h2>
   <div><%= link_to "Twitter", "http://twitter.com/nickpgreenfield" %></div>
   <div><%= link_to "Google+", "https://plus.google.com/103556857709392264587/posts?hl=en" %></div>
   <div><%= link_to "Github", "https://github.com/Greenie0506" %></div>
@@ -31,6 +33,7 @@
 </div><!-- social_media -->
 
 
-<div>
+<div class="contact">
+  <h2>Contact Me</h2>
   <%= render 'form' %>
-</div>
+</div><!-- contact -->

@@ -1,6 +1,6 @@
 Portfolio::Application.routes.draw do
 
-  resources :home, :only => [:new, :create]
+  resources :home, :only => [:create]
 
   resources :posts, :controller => 'post'
   match '/new', :to => 'post#new'
