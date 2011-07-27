@@ -1,4 +1,10 @@
-<div class="date_time">
+<% if admin_signed_in? %>
+  <%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
+<% else %>
+  <%= link_to "Sign in", new_admin_session_path, :method => :new %>
+<% end %>
+
+  <div class="date_time">
   <h2>Todays Date:</h2>
   <%= @time %>
 </div><!-- date_time" -->
