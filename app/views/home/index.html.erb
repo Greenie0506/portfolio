@@ -29,9 +29,10 @@
     <div>Title: <%= p.title %></div>
     <div>Date: <%= p.date %></div>
     <div><%= p.content %></div>
+    <br />
   <% end %>
 
-  <div class="new_blog_link"> 
+  <div class="new_blog_link">
     <% if admin_signed_in? %>
       <p><%= link_to "New Post?", new_post_path %></p>
     <% end %>
