@@ -32,8 +32,13 @@ GEM
     archive-tar-minitar (0.5.2)
     arel (2.0.9)
     awesome_print (0.4.0)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
     columnize (0.3.2)
+    devise (1.4.2)
+      bcrypt-ruby (~> 2.1.2)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -61,6 +66,7 @@ GEM
     multi_json (1.0.3)
     multi_xml (0.2.2)
     multipart-post (1.1.2)
+    orm_adapter (0.0.5)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -122,12 +128,15 @@ GEM
       rash (~> 0.3.0)
       simple_oauth (~> 0.1.4)
     tzinfo (0.3.24)
+    warden (1.0.4)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   awesome_print
+  devise
   factory_girl
   fuubar
   rails (= 3.0.5)
