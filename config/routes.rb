@@ -1,5 +1,7 @@
 Portfolio::Application.routes.draw do
 
+  devise_for :admins
+
   resources :home, :only => [:create]
 
   resources :posts, :controller => 'post'
