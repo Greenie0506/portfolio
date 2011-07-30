@@ -52,3 +52,9 @@
   <h2>Contact Me:</h2>
   <%= render 'form' %>
 </div><!-- contact -->
+
+<div class="flickr_photos">
+<% @photos_url.each do |pic| %>
+  <%= image_tag(pic) %>
+<% end %>
+</div><!--flickr_photos -->

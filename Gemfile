@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'awesome_print'
 gem 'twitter'
 gem 'devise'
+gem 'flickraw'
 # Use unicorn as the web server
 # gem 'unicorn'
 
