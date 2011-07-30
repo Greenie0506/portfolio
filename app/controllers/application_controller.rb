@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     @photos_url = []
     @all_photos.each do |photo|
       photo_info = flickr.photos.getInfo(:photo_id => photo.id)
-      @url = "http://farm#{photo_info.farm}.static.flickr.com/#{photo_info.server}/#{photo.id}_#{photo_info.secret}.jpg"
+      @url = "http://farm#{photo_info.farm}.static.flickr.com/#{photo_info.server}/#{photo.id}_#{photo_info.secret}_m.jpg"
       @photos_url << @url
     end
   end
